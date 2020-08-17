@@ -58,16 +58,23 @@ Si está utilizando alguna de las virt-who suscripciones, como licencias VDC o R
 * Permite a los usuarios utilizar la red interna RHV-M para VM
 * Ayuda a establecer una ovirtmgmtred
           
-          Configure ovirt-provider-ovn (Sí, No) [Sí]:
+      Configure ovirt-provider-ovn (Sí, No) [Sí]:
 
 ### Proxies opcionales
 * engine-setup opcionalmente puede configurar:
 *Proxy de E / S de imagen: permite a los usuarios cargar imágenes y archivos ISO en dominios de datos RHV desde la interfaz de usuario web RHV-M
 
-          Configurar Image I / O Proxy en este host (Sí, No) [Sí]:
+      Configurar Image I / O Proxy en este host (Sí, No) [Sí]:
           
 * Servidor proxy Websocket: permite a los usuarios conectarse a máquinas virtuales a través de consolas noVNC o HTML 5
 
-          ¿Configurar WebSocket Proxy en esta máquina? (Sí, No) [Sí]:
+      ¿Configurar WebSocket Proxy en esta máquina? (Sí, No) [Sí]:
           
           
+### Data Warehouse.
+* RHV incluye una base de datos de historial de gestión integral
+* Utilizado por aplicaciones de informes para generar informes en el centro de datos, clúster, niveles de host
+* Para configurar el almacén de datos en la máquina RHV-M:
+
+      Tenga en cuenta: el almacén de datos es necesario para el motor. Si elige no configurarlo en este host, debe configurarlo en un host remoto y luego configurar el motor en este host para que pueda acceder a la base de datos del host de Data Warehouse remoto. Configurar el almacén de datos en este host (Sí, No) [Sí]:
+
