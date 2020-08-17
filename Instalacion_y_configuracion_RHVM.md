@@ -78,3 +78,26 @@ Si está utilizando alguna de las virt-who suscripciones, como licencias VDC o R
 
       Tenga en cuenta: el almacén de datos es necesario para el motor. Si elige no configurarlo en este host, debe configurarlo en un host remoto y luego configurar el motor en este host para que pueda acceder a la base de datos del host de Data Warehouse remoto. Configurar el almacén de datos en este host (Sí, No) [Sí]:
 
+
+### Console Proxy
+* Para permitir el acceso a la consola serial de VM:
+ 
+      Configure VM Console Proxy en este host (Sí, No) [Sí]:
+
+Para utilizar esta función, se requiere una configuración adicional en la máquina cliente. Consulte "Apertura de una consola serie en una máquina virtual" en la Guía de administración de máquinas virtuales 
+
+### RHV-M FQDN
+* Para ingresar FQDN, ya sea:
+* Presione Entrar para aceptar el nombre de host detectado automáticamente
+* Ingrese un nombre de host alternativo y presione Enter
+
+      Host nombre DNS completo de este servidor [nombre de host detectado automáticamente]:
+      
+### firewall
+* engine-setup comprueba la configuración del cortafuegos
+* Ofrece modificar la configuración para abrir los puertos utilizados por RHV-M para la comunicación externa
+* Ejemplos: puertos TCP 80, 443
+
+      El programa de instalación puede configurar automáticamente el firewall en este sistema. 
+      Nota: la configuración automática del cortafuegos puede sobrescribir la configuración actual. 
+      ¿Quiere que el programa de instalación configure el cortafuegos? (Sí, No) [Sí]:
